@@ -1,0 +1,2797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml"
+      href="data:image/svg+xml,
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+        <text y='0.9em' font-size='90'>🌿</text>
+      </svg>">
+  <title>तेजस्वी रसाहार - प्राकृतिक स्वास्थ्य जूस और अंकुरित</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --primary: #00d97e;
+      --primary-dark: #00b368;
+      --primary-light: #e6fff5;
+      --accent: #ff6b35;
+      --accent-light: #fff5f0;
+      --bg-light: #ffffff;
+      --bg-body: #f8fffe;
+      --bg-card: #ffffff;
+      --text-main: #1a202c;
+      --text-muted: #64748b;
+      --text-bright: #0f172a;
+      --glass-bg: rgba(255, 255, 255, 0.95);
+      --glass-border: rgba(0, 217, 126, 0.15);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
+      --max-width: 1400px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", "Poppins", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #f8fffe 0%, #e6fff5 100%);
+      color: var(--text-main);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout helpers */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 8rem 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background: var(--primary-light);
+      border: 2px solid var(--primary);
+      border-radius: 50px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      margin-bottom: 1rem;
+      color: var(--text-bright);
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+
+
+    /* HEADER / NAVBAR */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.98);
+      border-bottom: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-badge {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 217, 126, 0.3);
+      font-size: 1.6rem;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .logo-title {
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: var(--primary-dark);
+    }
+
+    .logo-subtitle {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 0.5rem 0;
+      color: var(--text-main);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transform: translateX(-50%);
+      transition: width 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-links a:hover::before {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .pill-badge {
+      font-size: 0.7rem;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border: 1px solid var(--primary);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-primary {
+      padding: 0.7rem 1.8rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 4px 12px rgba(0, 217, 126, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 217, 126, 0.4);
+    }
+
+    .btn-primary span.icon {
+      font-size: 1.2rem;
+    }
+
+    /* Mobile nav toggle */
+
+    .nav-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0.4rem;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-main);
+      margin: 4px 0;
+      border-radius: 999px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .nav-open .nav-toggle span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    .nav-open .nav-toggle span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-open .nav-toggle span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .nav-links-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding-top: 8rem;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-left {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      background: var(--primary-light);
+      border: 2px solid var(--primary);
+      color: var(--primary-dark);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero-tag span.dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      font-weight: 900;
+      color: var(--text-bright);
+    }
+
+    .hero-title span.highlight {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+      padding: 0.7rem 1.2rem;
+      border-radius: 50px;
+      background: white;
+      border: 1px solid rgba(0, 217, 126, 0.2);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      color: var(--text-main);
+    }
+
+    .meta-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .meta-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-ghost {
+      padding: 0.7rem 1.8rem;
+      border-radius: 50px;
+      border: 2px solid var(--primary);
+      background: white;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-ghost:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-ghost span.icon {
+      font-size: 1.2rem;
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-note strong {
+      color: var(--primary-dark);
+    }
+
+    .hero-divider {
+      width: 2px;
+      height: 22px;
+      background: linear-gradient(to bottom, rgba(25, 50, 60, 0.15), transparent);
+      border-radius: 999px;
+    }
+
+    .hero-right {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 30px;
+      padding: 2rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hero-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .hero-card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-card-title span.icon {
+      font-size: 1.2rem;
+    }
+
+    .hero-chip {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(28, 124, 84, 0.08);
+      border: 1px solid rgba(28, 124, 84, 0.18);
+      color: var(--primary-dark);
+      white-space: nowrap;
+    }
+
+    .hero-juice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .juice-item {
+      background: white;
+      border-radius: 20px;
+      padding: 1rem;
+      font-size: 0.8rem;
+      border: 1px solid rgba(0, 217, 126, 0.15);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .juice-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .juice-emoji {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .juice-name {
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      color: var(--text-bright);
+    }
+
+    .juice-tag {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .hero-card-footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 0.3rem;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .hero-stat {
+      min-width: 0;
+    }
+
+    .hero-stat span {
+      display: block;
+      margin-bottom: 0.1rem;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: 0.86rem;
+      color: var(--primary-dark);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .hero-sprouts-note {
+      margin-top: 0.9rem;
+      padding: 0.55rem 0.75rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(244, 176, 32, 0.4);
+      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-main);
+      box-shadow: 0 10px 26px rgba(244, 176, 32, 0.4);
+    }
+
+    .hero-sprouts-note span.icon {
+      font-size: 1.1rem;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: white;
+      border-radius: 50px;
+      margin: 4rem 2rem 0;
+      padding: 6rem 0;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(0, 217, 126, 0.1);
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .about-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+
+    .highlight-pill {
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: all 0.2s ease;
+      color: var(--primary-dark);
+    }
+
+    .highlight-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .highlight-pill span.icon {
+      font-size: 1.3rem;
+    }
+
+    .experience-card {
+      background: white;
+      border-radius: 25px;
+      padding: 2rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-md);
+      transition: all 0.2s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .exp-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.1rem;
+    }
+
+    .exp-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-bright);
+    }
+
+    .exp-owner {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .exp-years {
+      font-size: 2.5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: right;
+    }
+
+    .exp-badge {
+      font-size: 0.75rem;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      background: var(--accent-light);
+      border: 1px solid var(--accent);
+      text-align: right;
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--accent);
+    }
+
+    .exp-list {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      list-style: none;
+    }
+
+    .exp-list li {
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+
+    .exp-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      margin-top: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .exp-routine-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(28, 124, 84, 0.07);
+      border: 1px dashed rgba(28, 124, 84, 0.35);
+      margin-top: 0.8rem;
+      color: var(--primary-dark);
+    }
+
+    .exp-routine-badge span.icon {
+      font-size: 1rem;
+    }
+
+    /* EARLY MORNING ROUTINE SECTION */
+
+    .routine {
+      padding-top: 3rem;
+    }
+
+    .routine-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .routine-text p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 0.7rem;
+    }
+
+    .routine-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .routine-step {
+      background: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      border-left: 4px solid var(--primary);
+    }
+
+    .routine-step:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .routine-step-title {
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--text-bright);
+    }
+
+    .routine-step-title span.time {
+      font-size: 0.8rem;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .routine-step p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .routine-photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+
+    .routine-photo {
+      position: relative;
+      border-radius: 18px;
+      min-height: 110px;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.14);
+    }
+
+    .routine-photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.05)
+      );
+    }
+
+    .routine-photo-label {
+      position: absolute;
+      left: 0.7rem;
+      bottom: 0.6rem;
+      right: 0.7rem;
+      color: #ffffff;
+      font-size: 0.7rem;
+    }
+
+    .routine-photo-label strong {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 0.05rem;
+    }
+
+    /* PRODUCTS */
+
+    .products {
+      margin-top: 3rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 25px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .product-header {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .product-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 4px 12px rgba(0, 217, 126, 0.3);
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-bright);
+    }
+
+    .product-tagline {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .product-benefits-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-top: 0.3rem;
+    }
+
+    .product-benefits-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.3rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .product-benefits-list li {
+      margin-bottom: 0.25rem;
+      display: flex;
+      gap: 0.3rem;
+    }
+
+    .product-benefits-list li::before {
+      content: "✓";
+      font-size: 0.75rem;
+      margin-top: 2px;
+      color: var(--primary);
+    }
+
+    /* WHY CHOOSE US */
+
+    .why {
+      margin-top: 3rem;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .why-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .why-card {
+      background: white;
+      border-radius: 22px;
+      padding: 1.8rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-sm);
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .why-card-title {
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--text-bright);
+    }
+
+    .why-card-title span.icon {
+      font-size: 1.5rem;
+    }
+
+    .why-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .why-stats {
+      background: white;
+      border-radius: 25px;
+      padding: 2rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .why-stats:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .why-stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+      border-radius: 15px;
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+    }
+
+    .why-stat-item span {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .why-stat-item strong {
+      font-size: 2rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .why-family-note {
+      margin-top: 0.8rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .why-family-note strong {
+      color: var(--primary-dark);
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      margin-top: 3rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-card {
+      position: relative;
+      border-radius: 25px;
+      overflow: hidden;
+      min-height: 250px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .gallery-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.2)
+      );
+    }
+
+    .gallery-label {
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      color: white;
+      z-index: 2;
+    }
+
+    .gallery-label span.tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      opacity: 0.9;
+      padding: 0.3rem 0.8rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-label h4 {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 700;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials {
+      margin-top: 3rem;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 25px;
+      padding: 2rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-md);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .testimonial-quote {
+      position: relative;
+      padding-left: 1.4rem;
+    }
+
+    .testimonial-quote::before {
+      content: "“";
+      position: absolute;
+      left: 0;
+      top: -0.2rem;
+      font-size: 2.8rem;
+      color: rgba(25, 50, 60, 0.08);
+      line-height: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .testimonial-tag {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* FAQ */
+
+    .faq {
+      margin-top: 3rem;
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 20px;
+      padding: 1.5rem 2rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-item.open {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      background: var(--primary-light);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-bright);
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      color: var(--primary);
+      transition: transform 0.2s ease;
+      font-weight: 300;
+    }
+
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      display: none;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      margin-top: 3rem;
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+      gap: 2rem;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 30px;
+      padding: 3rem 2.5rem;
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      box-shadow: var(--shadow-md);
+      transition: all 0.2s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-item {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .contact-value {
+      font-weight: 700;
+      color: var(--text-bright);
+      font-size: 1.1rem;
+    }
+
+    .contact-phone a {
+      color: var(--primary);
+      transition: color 0.2s ease;
+    }
+
+    .contact-phone a:hover {
+      color: var(--primary-dark);
+    }
+
+    .contact-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.9rem;
+    }
+
+    .map-wrapper {
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(0, 217, 126, 0.1);
+      min-height: 400px;
+      transition: all 0.2s ease;
+    }
+
+    .map-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* FOOTER */
+
+ footer {
+  background: white;
+  color: var(--text-main);
+  padding: 60px 20px;
+  margin-top: 100px;
+  border-top: 2px solid var(--primary);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+    .footer-bottom span {
+      opacity: 0.85;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 30px;
+      bottom: 100px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      z-index: 1100;
+      transition: all 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+    }
+
+    /* MOBILE STICKY ORDER BAR */
+
+    .mobile-order-bar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      border-top: 1px solid rgba(0, 217, 126, 0.2);
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+      padding: 1rem 1.5rem;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      z-index: 1090;
+    }
+
+    .mobile-order-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .mobile-order-text strong {
+      color: var(--primary-dark);
+    }
+
+    .btn-mobile-order {
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      border: none;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .btn-mobile-order:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+    }
+
+    /* SCROLL ANIMATIONS */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Smooth Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--primary-dark);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 960px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+      }
+
+      .hero-right {
+        order: -1;
+      }
+
+      .about-inner,
+      .routine-inner,
+      .why-grid,
+      .contact-inner {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+      }
+
+      section {
+        padding: 6rem 0;
+      }
+
+      .section-title {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links-wrapper {
+        position: fixed;
+        inset: 70px 0 auto 0;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 217, 126, 0.2);
+        transform: translateY(-120%);
+        transition: transform 0.3s ease;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+
+      .nav-open .nav-links-wrapper {
+        transform: translateY(0);
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        width: 100%;
+      }
+
+      .nav-links a {
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(0, 217, 126, 0.1);
+      }
+
+      .nav-cta {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .pill-badge,
+      .btn-primary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      .hero {
+        padding-top: 6rem;
+        min-height: auto;
+      }
+
+      .about {
+        margin: 3rem 1rem 0;
+        border-radius: 40px;
+        padding: 4rem 0;
+      }
+
+      section {
+        padding: 5rem 0;
+      }
+
+      .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+      }
+
+      .mobile-order-bar {
+        display: flex;
+      }
+
+      .whatsapp-float {
+        bottom: 90px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 1.6rem;
+      }
+
+      .hero-card {
+        padding: 1.8rem;
+      }
+
+      .hero-card-footer {
+        gap: 1rem;
+      }
+
+      .hero-stat strong {
+        white-space: normal;
+      }
+
+      .container {
+        padding: 0 1.5rem;
+      }
+    }
+@media (max-width: 600px) {
+  footer {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom) + 30px);
+    /* Extra spacing + ensures no text hiding */
+  }
+
+  .footer-bottom {
+    display: block;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .footer-bottom span {
+    display: block;
+    margin-bottom: 6px;
+    white-space: normal;
+    overflow: visible;
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+      }
+
+      .btn-primary,
+      .btn-ghost {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-juice-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .routine-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-title {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+      }
+
+      .section-header {
+        margin-bottom: 3rem;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+ <header>
+  <div class="nav">
+    <div class="nav-left">
+      <div class="logo-badge">🌿</div>
+      <div class="logo-text">
+        <div class="logo-title">तेजस्वी रसाहार</div>
+        <div class="logo-subtitle">नेचुरल जूस और स्प्राउट्स • उज्जैन</div>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links-wrapper">
+      <ul class="nav-links">
+        <li><a href="#home">होम</a></li>
+        <li><a href="#about">हमारी कहानी</a></li>
+        <li><a href="#routine">सुबह की दिनचर्या</a></li>
+        <li><a href="#products">हमारे प्रोडक्ट्स</a></li>
+        <li><a href="#gallery">गैलरी</a></li>
+        <li><a href="#testimonials">ग्राहक अनुभव</a></li>
+        <li><a href="#faq">सवाल–जवाब</a></li>
+        <li><a href="#contact">हमसे मिलें</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <span class="pill-badge">7+ साल से आपकी सेवा में</span>
+        <button class="btn-primary" onclick="openWhatsApp()">
+          <span class="icon">📲</span>
+          WhatsApp पर ऑर्डर करें
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- HERO -->
+  <main>
+   <section class="hero" id="home" style="margin-top: 20px;">
+  <div class="container hero-inner">
+    <div class="hero-left reveal">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        हर सुबह उज्जैन में ताज़ा तैयार किया जाता है
+      </div>
+
+      <h1 class="hero-title">
+        शुद्ध, प्राकृतिक&nbsp;
+        <span class="highlight">सेहत हर घूँट में।</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        हमारे हर्बल जूस, गर्म सूप और प्रोटीन से भरे स्प्राउट्स  
+        <strong>जसवंत सिंह चौहान</strong> और उनकी पत्नी द्वारा  
+        रोज़ सुबह <strong>3:00 AM</strong> से मेहनत करके तैयार किए जाते हैं—  
+        ताकि उज्जैन को <strong>5:00 AM से 12:00 PM</strong> तक ताज़ा सेहत मिल सके।
+      </p>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-dot"></span> जिम ट्रेनर्स और स्पोर्ट्स प्लेयर्स द्वारा भरोसेमंद
+        </div>
+        <div class="meta-item">
+          <span class="meta-dot"></span> कई लोग शुगर और BP के लिए अपनी दिनचर्या में शामिल करते हैं
+        </div>
+        <div class="meta-item">
+          <span class="meta-dot"></span> ताज़ा • बिना प्रिज़र्वेटिव • RO पानी का उपयोग
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="openWhatsApp()">
+          <span class="icon">💚</span>
+          अपनी सेहत की शुरुआत करें
+        </button>
+        <button
+          class="btn-ghost"
+          onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
+        >
+          <span class="icon">🥕</span>
+          हमारे जूस देखें
+        </button>
+      </div>
+
+      <div class="hero-note">
+        <span>⭐ <strong>5:00 AM – 12:00 PM</strong> रोज़ ताज़ी बैच</span>
+        <span class="hero-divider"></span>
+        <span>डायबिटीज, BP, फिटनेस और फैमिली हेल्थ के लिए बेहतर (डॉक्टर की सलाह के साथ)</span>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <div class="hero-card-header">
+            <div class="hero-card-title">
+              <span class="icon">🍹</span>
+              आज का हेल्थ मेन्यू
+            </div>
+            <div class="hero-chip">शुगर-फ्री विकल्प उपलब्ध</div>
+          </div>
+
+          <div class="hero-juice-grid">
+            <div class="juice-item">
+              <div class="juice-emoji">🥒</div>
+              <div class="juice-name">करेला जूस</div>
+              <div class="juice-tag">डायबिटीज वालों में लोकप्रिय</div>
+            </div>
+            <div class="juice-item">
+              <div class="juice-emoji">🫐</div>
+              <div class="juice-name">बीटरूट जूस</div>
+              <div class="juice-tag">स्टैमिना और खून के लिए</div>
+            </div>
+            <div class="juice-item">
+              <div class="juice-emoji">🌿</div>
+              <div class="juice-name">गिलोय जूस</div>
+              <div class="juice-tag">प्राकृतिक इम्युनिटी</div>
+            </div>
+            <div class="juice-item">
+              <div class="juice-emoji">🌵</div>
+              <div class="juice-name">एलोवेरा जूस</div>
+              <div class="juice-tag">पाचन और स्किन</div>
+            </div>
+            <div class="juice-item">
+              <div class="juice-emoji">🍃</div>
+              <div class="juice-name">नीम जूस</div>
+              <div class="juice-tag">डिटॉक्स के लिए</div>
+            </div>
+            <div class="juice-item">
+              <div class="juice-emoji">🍅</div>
+              <div class="juice-name">हॉट सूप</div>
+              <div class="juice-tag">टमाटर और सुरजना</div>
+            </div>
+          </div>
+
+          <div class="hero-card-footer">
+            <div class="hero-stat">
+              <span>अनुभव</span>
+              <strong>10+ साल</strong>
+            </div>
+            <div class="hero-stat">
+              <span>स्थान</span>
+              <strong>गांधी उद्यान, उज्जैन</strong>
+            </div>
+            <div class="hero-stat">
+              <span>विशेषता</span>
+              <strong>हर्बल हेल्थ जूस</strong>
+            </div>
+          </div>
+
+          <div class="hero-sprouts-note">
+            <span class="icon">🥗</span>
+            <span>
+              <strong>प्रीमियम 5-इन-1 स्प्राउट्स:</strong>
+              मूंग • चना • मेथी • मूंगफली • अनारदाना
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-inner">
+    
+    <div class="about-text reveal">
+      <div class="section-eyebrow">हमारी कहानी</div>
+
+      <h2 class="section-title">तेजस्वी रसाहार — एक छोटी सी दुकान, पर दिल बहुत बड़ा।</h2>
+
+      <p>
+        पिछले <strong>7 सालों</strong> से तेजस्वी रसाहार उज्जैन के लोगों के लिए  
+        एक भरोसेमंद हेल्थ स्टॉप बना हुआ है।  
+        <strong>गांधी उद्यान, क्षीर सागर, आगर रोड</strong> पर स्थित हमारी दुकान  
+        ताज़ा, साफ और रोज़ तैयार किए गए हर्बल जूस, सूप और स्प्राउट्स के लिए जानी जाती है।
+      </p>
+
+      <p>
+        इस दुकान को <strong>जसवंत सिंह चौहान</strong> (उम्र लगभग <strong>62 साल</strong>)  
+        अपनी पत्नी के साथ मिलकर चलाते हैं।  
+        दिल की समस्या, BP, शुगर और आंखों की दिक्कतें होने के बावजूद  
+        (जो दवाइयों और डॉक्टर की देखरेख से संभाली जाती हैं),  
+        वे हर सुबह दुकान पर खड़े रहते हैं — ताकि उज्जैन के परिवारों को  
+        उनकी रोज़मर्रा की दिनचर्या के लिए एक प्राकृतिक और आसान विकल्प मिल सके।
+      </p>
+
+      <p>
+        हमारे रोज़ आने वाले ग्राहकों में  
+        <strong>स्पोर्ट्स खिलाड़ी, जिम मेंबर, ऑफिस जाने वाले लोग,  
+        बुज़ुर्ग और हेल्थ–कॉन्शियस परिवार</strong> शामिल हैं।  
+        कई लोगों ने डॉक्टर की सलाह के साथ  
+        हमारे ताज़ा जूस और स्प्राउट्स को अपनी लाइफस्टाइल में जोड़कर  
+        खुद को हल्का, ऊर्जावान और बेहतर महसूस किया है।
+      </p>
+
+      <div class="about-highlights">
+        <div class="highlight-pill">
+          <span class="icon">🧼</span>
+          साफ और स्वच्छ तैयारी
+        </div>
+
+        <div class="highlight-pill">
+          <span class="icon">💧</span>
+          सभी जूस RO पानी से बनाए जाते हैं
+        </div>
+
+        <div class="highlight-pill">
+          <span class="icon">❌</span>
+          बिना प्रिज़र्वेटिव और बिना आर्टिफ़िशियल कलर
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="experience-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">हमारे संस्थापक</div>
+            <div class="exp-owner">जसवंत सिंह चौहान</div>
+          </div>
+          <div style="text-align: right;">
+            <div class="exp-years">10+ वर्ष</div>
+            <div class="exp-badge">हेल्थ ड्रिंक अनुभव</div>
+          </div>
+        </div>
+
+        <ul class="exp-list">
+          <li>
+            <span class="exp-bullet"></span>
+            <span>एक सरल विचार से शुरुआत — हेल्दी ड्रिंक को रोज़मर्रा में शामिल करना।</span>
+          </li>
+          <li>
+            <span class="exp-bullet"></span>
+            <span>गुणवत्ता बनाए रखने के लिए जूस खुद तैयार करते हैं, स्टाफ पर निर्भर नहीं।</span>
+          </li>
+          <li>
+            <span class="exp-bullet"></span>
+            <span>डायबिटीज, BP, फिटनेस और उम्रदराज लोगों की ज़रूरतों को समझते हैं।</span>
+          </li>
+          <li>
+            <span class="exp-bullet"></span>
+            <span>जल्दी उठने और नियमित मेहनत में विश्वास।</span>
+          </li>
+        </ul>
+
+        <div class="exp-routine-badge">
+          <span class="icon">⏰</span>
+          <span><strong>दैनिक दिनचर्या:</strong> सुबह 3:00 बजे जागना और 5:00 बजे दुकान खोलना।</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- EARLY MORNING ROUTINE -->
+   <!-- EARLY MORNING ROUTINE -->
+<section class="routine" id="routine">
+  <div class="routine-inner">
+
+    <div class="routine-text reveal">
+      <div class="section-eyebrow">सुबह की मेहनत</div>
+
+      <h2 class="section-title">3:00 AM की रसोई से 5:00 AM तक खुली दुकान।</h2>
+
+      <p>
+        हर दिन जसवंत जी और उनकी पत्नी सुबह <strong>3:00 AM</strong> पर उठ जाते हैं।  
+        जब पूरा शहर सो रहा होता है, तब वे चुपचाप सब्जियाँ धोना,  
+        भिगोने का काम और मिक्सर–ग्राइंडर तैयार करना शुरू कर देते हैं।
+      </p>
+
+      <p>
+        हमारे सभी जूस <strong>RO पानी</strong> और साफ–सुथरी सामग्री से बनाए जाते हैं।  
+        <strong>5:00 AM</strong> तक पहली ताज़ा बैच तैयार हो चुकी होती है —  
+        जो walkers, gym जाने वालों और ऑफिस जाने वालों के लिए बिल्कुल सही समय होता है।  
+        दुकान लगभग <strong>12:00 PM (दोपहर)</strong> तक चलती है।
+      </p>
+
+      <p>
+        अपनी सेहत की चुनौतियों के बावजूद, जसवंत जी  
+        दवाइयों और डॉक्टर की सलाह का पालन करते हुए  
+        रोज़ इस दिनचर्या को निभाते हैं — ताकि लोगों को ताज़ा और हल्के पेय मिल सकें।
+      </p>
+
+      <div class="routine-grid">
+
+        <div class="routine-step">
+          <div class="routine-step-title">
+            <span class="time">3:00 – 4:00 AM</span>
+          </div>
+          <p>ताज़ी सब्जियों और सामग्री को काटना और अच्छी तरह धोना।</p>
+        </div>
+
+        <div class="routine-step">
+          <div class="routine-step-title">
+            <span class="time">4:00 – 5:00 AM</span>
+          </div>
+          <p>RO पानी से जूस बनाना और कंटेनर भरना।</p>
+        </div>
+
+        <div class="routine-step">
+          <div class="routine-step-title">
+            <span class="time">5:00 – 9:00 AM</span>
+          </div>
+          <p>सुबह की पहली बैच — वॉकर्स, जिम मेंबर्स, ऑफिस जाने वालों को सेवा।</p>
+        </div>
+
+        <div class="routine-step">
+          <div class="routine-step-title">
+            <span class="time">9:00 AM – 12:00 PM</span>
+          </div>
+          <p>परिवारों और बीच–बीच में आने वाले ग्राहकों की सेवा, फिर दुकान बंद।</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="routine-photos reveal">
+      <div class="routine-photo-grid">
+
+       <div
+              class="routine-photo"
+              style="background-image:url('https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80');"
+            >
+          <div class="routine-photo-label">
+            <strong>3:00 AM – शांत रसोई</strong>
+            दिन की पहली बैच की तैयारी।
+          </div>
+        </div>
+
+        <div
+              class="routine-photo"
+              style="background-image:url('https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=900&q=80');"
+            >
+          <div class="routine-photo-label">
+            <strong>मिक्सर की आवाज़</strong>
+            ताज़ी सब्जियाँ, जड़ी–बूटियाँ और RO पानी।
+          </div>
+        </div>
+
+       <div
+              class="routine-photo"
+              style="background-image:url('https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80');"
+            >
+          <div class="routine-photo-label">
+            <strong>साफ–सुथरी कटिंग</strong>
+            हर चीज़ पहले अच्छी तरह धोई जाती है।
+          </div>
+        </div>
+
+        <div
+              class="routine-photo"
+              style="background-image:url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80');"
+            >
+          <div class="routine-photo-label">
+            <strong>5:00 AM – दुकान खुली</strong>
+            सुबह के ग्राहकों का स्वागत।
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- PRODUCTS -->
+  <!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">हमारा मेन्यू</div>
+      <h2 class="section-title">हमारे प्रमुख जूस, सूप और स्प्राउट्स</h2>
+      <p class="section-subtitle">
+        रोज़ाना के लिए ताज़े, साफ और सरल तरीके से तैयार किए गए  
+        हर्बल जूस, गर्म सूप और पौष्टिक 5-in-1 स्प्राउट्स —  
+        आपकी सेहत का ध्यान रखने के लिए।
+      </p>
+    </div>
+
+    <div class="products-grid reveal">
+
+      <!-- Giloy -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🌿</div>
+          <div>
+            <div class="product-title">गिलोय जूस</div>
+            <div class="product-tagline">परम्परागत प्रतिरोधक क्षमता</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>इम्युनिटी बढ़ाने में सहायक माना जाता है</li>
+          <li>मौसम बदलने पर अक्सर पिया जाता है</li>
+          <li>पाचन में हल्की राहत</li>
+          <li>आयुर्वेद में शरीर शुद्धि के लिए प्रसिद्ध</li>
+        </ul>
+      </div>
+
+      <!-- Karela -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🥒</div>
+          <div>
+            <div class="product-title">करेला जूस</div>
+            <div class="product-tagline">डायबिटीज वालों की पसंद</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>शुगर रूटीन में कई लोग शामिल करते हैं</li>
+          <li>कम कैलोरी, वजन प्रबंधन में सहायक</li>
+          <li>लीवर और मेटाबॉलिज़्म सपोर्ट</li>
+          <li>प्राकृतिक पौधों के पोषक तत्व</li>
+        </ul>
+      </div>
+
+      <!-- Aloe Vera -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🌵</div>
+          <div>
+            <div class="product-title">एलोवेरा जूस</div>
+            <div class="product-tagline">ठंडक और हल्कापन</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>पाचन में आराम महसूस होता है</li>
+          <li>स्किन को भीतर से नमी देता है</li>
+          <li>गर्मियों में बहुत पसंद किया जाता है</li>
+          <li>हल्के डिटॉक्स रूटीन में शामिल</li>
+        </ul>
+      </div>
+
+      <!-- Coconut Water -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🥥</div>
+          <div>
+            <div class="product-title">नारियल पानी</div>
+            <div class="product-tagline">प्राकृतिक इलेक्ट्रोलाइट ड्रिंक</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>हर उम्र के लिए हल्का और ताज़ा</li>
+          <li>पोटैशियम जैसे प्राकृतिक इलेक्ट्रोलाइट्स</li>
+          <li>पेट पर बिल्कुल हल्का</li>
+          <li>वॉक के बाद बहुत अच्छा</li>
+        </ul>
+      </div>
+
+      <!-- Carrot -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🥕</div>
+          <div>
+            <div class="product-title">गाजर जूस</div>
+            <div class="product-tagline">रोज़ाना की सेहत</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>विटामिन A और पौध पोषक तत्वों से भरपूर</li>
+          <li>आंखों और स्किन के लिए उपयोगी</li>
+          <li>बच्चों और बड़ों सभी को पसंद</li>
+          <li>नाश्ते के साथ बेहतरीन</li>
+        </ul>
+      </div>
+
+      <!-- Beetroot -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🫐</div>
+          <div>
+            <div class="product-title">बीटरूट जूस</div>
+            <div class="product-tagline">खून और स्टैमिना के लिए पसंद</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>हीमोग्लोबिन सपोर्ट के लिए लोकप्रिय</li>
+          <li>जिम और स्पोर्ट्स वालों की पहली पसंद</li>
+          <li>BP रूटीन में अक्सर लिया जाता है</li>
+          <li>गहरा रंग और ताज़गी भरा स्वाद</li>
+        </ul>
+      </div>
+
+      <!-- Neem -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🍃</div>
+          <div>
+            <div class="product-title">नीम जूस</div>
+            <div class="product-tagline">शुद्धिकरण के लिए</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>शरीर और त्वचा की सफाई में सहायक</li>
+          <li>डिटॉक्स रूटीन में शामिल</li>
+          <li>कम मात्रा में लिया जाता है</li>
+          <li>गहरा हर्बल स्वाद</li>
+        </ul>
+      </div>
+
+      <!-- Tomato Soup -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🍅</div>
+          <div>
+            <div class="product-title">टमाटर का गरम सूप</div>
+            <div class="product-tagline">आरामदायक स्वाद</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>गरम, स्वादिष्ट और हल्का</li>
+          <li>सर्दियों और शाम के लिए सही</li>
+          <li>पाचन में आसान</li>
+          <li>हल्के खाने के साथ बेहतर</li>
+        </ul>
+      </div>
+
+      <!-- Surjana Soup -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🥣</div>
+          <div>
+            <div class="product-title">सुरजना का गरम सूप</div>
+            <div class="product-tagline">घरेलू और पौष्टिक</div>
+          </div>
+        </div>
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>घर जैसे स्वाद वाली रेसिपी</li>
+          <li>मौसम बदलने पर फायदेमंद</li>
+          <li>बुज़ुर्गों और परिवारों में लोकप्रिय</li>
+          <li>हल्का और पौष्टिक</li>
+        </ul>
+      </div>
+
+      <!-- Sprouts -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon">🌾</div>
+          <div>
+            <div class="product-title">प्रीमियम स्प्राउट्स मिक्स (5-in-1)</div>
+            <div class="product-tagline">सुबह का ऊर्जा भरा कटोरा</div>
+          </div>
+        </div>
+
+        <div class="product-benefits-title">शामिल सामग्री</div>
+        <ul class="product-benefits-list">
+          <li>मूंग (Green Gram)</li>
+          <li>चना (Chickpeas)</li>
+          <li>मेथी दाना</li>
+          <li>मूंगफली दाना</li>
+          <li>अनार दाना</li>
+        </ul>
+
+        <div class="product-benefits-title">फायदे</div>
+        <ul class="product-benefits-list">
+          <li>प्रोटीन और फाइबर से भरपूर</li>
+          <li>नाश्ते या शाम के लिए बेहतरीन</li>
+          <li>पेट भरे रखता है, ऊर्जा देता है</li>
+          <li>किसी भी जूस के साथ अच्छा लगता है</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- WHY CHOOSE US -->
+<section class="why">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">हम क्यों भरोसेमंद हैं</div>
+      <h2 class="section-title">परिवार द्वारा चलाया गया, मेहनत से बनाया गया, सेहत पर ध्यान।</h2>
+      <p class="section-subtitle">
+        लोग तेजस्वी रसाहार पर सिर्फ स्वाद के लिए नहीं,  
+        बल्कि एक भरोसेमंद और रोज़ एक जैसा रहने वाले रूटीन के लिए आते हैं —  
+        जिसे हर दिन एक ही परिवार प्यार से बनाता है।
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <!-- Left Side -->
+      <div class="why-left reveal">
+        <div class="why-points">
+
+          <div class="why-card">
+            <div class="why-card-title">
+              <span class="icon">🧼</span>
+              साफ–सुथरी तैयारी
+            </div>
+            <p>
+              बर्तन, सामग्री और पूरा कार्यक्षेत्र हमेशा साफ रखा जाता है —  
+              ताकि आपको हर गिलास में भरोसा महसूस हो।
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-title">
+              <span class="icon">💧</span>
+              RO पानी और ताज़ी सामग्री
+            </div>
+            <p>
+              हर जूस RO पानी और ताज़ा सामग्री से बनाया जाता है।  
+              हमारे यहाँ कोई तैयार सिरप, पाउडर या शॉर्टकट इस्तेमाल नहीं होता।
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-title">
+              <span class="icon">🤝</span>
+              व्यक्तिगत सुझाव
+            </div>
+            <p>
+              अगर आप confused हों कि कौन सा जूस लें,  
+              तो जसवंत जी आपकी जरूरत सुनकर आपको उपयुक्त विकल्प बताते हैं  
+              (हमेशा डॉक्टर की सलाह को प्राथमिकता देते हुए)।
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-title">
+              <span class="icon">🏠</span>
+              आसानी से मिलने वाली लोकेशन
+            </div>
+            <p>
+              गांधी उद्यान, क्षीर सागर, आगर रोड पर स्थित —  
+              वॉकर्स, जिम मेंबर और रोज़ाना आने–जाने वालों का पसंदीदा स्टॉप।
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="why-right reveal">
+
+        <div class="why-stats">
+          <div class="why-stat-item">
+            <span>उज्जैन में सेवा</span>
+            <strong>7+ साल</strong>
+            <span>वर्तमान स्थान पर</span>
+          </div>
+
+          <div class="why-stat-item">
+            <span>हेल्थ ड्रिंक अनुभव</span>
+            <strong>10+ साल</strong>
+            <span>निरंतर अभ्यास</span>
+          </div>
+
+          <div class="why-stat-item">
+            <span>मुख्य श्रेणियाँ</span>
+            <strong>3</strong>
+            <span>जूस, सूप और स्प्राउट्स</span>
+          </div>
+
+          <div class="why-stat-item">
+            <span>सेवा करते हैं</span>
+            <strong>सभी</strong>
+            <span>फिटनेस, परिवार और बुज़ुर्ग</span>
+          </div>
+        </div>
+
+        <p class="why-family-note">
+          <strong>62 की उम्र में भी:</strong>  
+          अपनी सेहत की चुनौतियों के बावजूद, संस्थापक हर दिन  
+          डॉक्टर की सलाह मानते हुए और दवाइयाँ लेते हुए  
+          ग्राहकों के लिए दुकान खोलते हैं।  
+          यही उनकी मेहनत और दिल की पहचान है।
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+   <!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">गैलरी</div>
+      <h2 class="section-title">तेजस्वी रसाहार की एक झलक</h2>
+      <p class="section-subtitle">
+        ये तस्वीरें उस अनुभव को दर्शाती हैं जो हम रोज़ ग्राहकों को देना चाहते हैं —  
+        ताज़े जूस, पौष्टिक स्प्राउट्स और एक स्वागतपूर्ण माहौल।  
+        बाद में आप अपनी दुकान की असली तस्वीरें भी यहाँ जोड़ सकते हैं।
+      </p>
+    </div>
+
+    <div class="gallery-grid reveal">
+
+      <div
+            class="gallery-card"
+            style="background-image:url('https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80');"
+          >
+        <div class="gallery-label">
+          <span class="tag">दुकान</span>
+          <h4>गांधी उद्यान पर रोज़ के स्वास्थ्य की सेवा</h4>
+        </div>
+      </div>
+
+       <div
+            class="gallery-card"
+            style="background-image:url('https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=900&q=80');"
+          >
+        <div class="gallery-label">
+          <span class="tag">ताज़े जूस</span>
+          <h4>रोज़ रंग-बिरंगे, पौष्टिक गिलास</h4>
+        </div>
+      </div>
+
+     <div
+            class="gallery-card"
+            style="background-image:url('https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=900&q=80');"
+          >
+        <div class="gallery-label">
+          <span class="tag">स्प्राउट्स मिक्स</span>
+          <h4>5-in-1 ऊर्जा से भरपूर कटोरा</h4>
+        </div>
+      </div>
+
+     <div
+            class="gallery-card"
+            style="background-image:url('https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=900&q=80');"
+          >
+        <div class="gallery-label">
+          <span class="tag">समुदाय</span>
+          <h4>Walkers, gym-goers और परिवार एक साथ</h4>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- TESTIMONIALS -->
+    <!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">ग्राहकों की बातें</div>
+      <h2 class="section-title">सच्चे लोग, सच्चा अनुभव।</h2>
+      <p class="section-subtitle">
+        यहाँ कुछ आम अनुभव दिए गए हैं, जो बताते हैं कि  
+        हमारे regular ग्राहक कैसे जूस और स्प्राउट्स को  
+        अपनी रोज़मर्रा की सेहत यात्रा का हिस्सा बनाते हैं  
+        (हमेशा डॉक्टर की सलाह के साथ)।
+      </p>
+    </div>
+
+    <div class="testimonial-grid reveal">
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          “तेजस्वी रसाहार का करेला जूस मेरी रोज़ की दिनचर्या का हिस्सा बन गया है।  
+          डॉक्टर की सलाह और नियमित चेकअप के साथ ये जूस मुझे  
+          शुगर लेवल में काफी स्थिर महसूस करवाता है।”
+        </div>
+        <div class="testimonial-author">
+          <div>
+            <div class="testimonial-name">नियमित ग्राहक</div>
+            <div class="testimonial-tag">सुबह आने वाले</div>
+          </div>
+          <div>🥒</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          “मैं जिम प्रोफेशनल हूँ, मुझे stamina और recovery चाहिए।  
+          यहाँ का बीटरूट जूस और स्प्राउट्स मेरी routine में perfectly फिट होते हैं।  
+          सबसे अच्छी बात — यह सब fresh होता है, bottled नहीं।”
+        </div>
+        <div class="testimonial-author">
+          <div>
+            <div class="testimonial-name">फिटनेस Enthusiast</div>
+            <div class="testimonial-tag">शाम के रूटीन वाले</div>
+          </div>
+          <div>💪</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          “5-in-1 स्प्राउट्स मिक्स अब हमारे घर का favourite breakfast बन गया है।  
+          यह भरपेट, स्वादिष्ट और fried snacks से कहीं बेहतर है।  
+          बच्चों और बुज़ुर्गों दोनों को पसंद आता है।”
+        </div>
+        <div class="testimonial-author">
+          <div>
+            <div class="testimonial-name">स्वास्थ्य–केन्द्रित माता–पिता</div>
+            <div class="testimonial-tag">फैमिली पैक लेने वाले</div>
+          </div>
+          <div>🥗</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          “मैं बीटरूट जूस और टमाटर सूप दोनों के लिए regularly आता हूँ।  
+          दवाइयों और डॉक्टर की सलाह के साथ  
+          ये प्राकृतिक पेय मुझे energetic और cared महसूस कराते हैं।”
+        </div>
+        <div class="testimonial-author">
+          <div>
+            <div class="testimonial-name">सीनियर सिटिजन</div>
+            <div class="testimonial-tag">शाम के समय आने वाले</div>
+          </div>
+          <div>🧓</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- FAQ -->
+   <!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">सवाल–जवाब</div>
+      <h2 class="section-title">ग्राहक अक्सर ये सवाल पूछते हैं।</h2>
+      <p class="section-subtitle">
+        यहाँ कुछ आम सवालों के जवाब दिए गए हैं।  
+        अगर आपका कोई और सवाल है, तो हमें कॉल करें या WhatsApp पर मैसेज भेजें —  
+        हम हमेशा मदद करने के लिए तैयार हैं।
+      </p>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <!-- Q1 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>क्या आपके जूस में चीनी या प्रिज़र्वेटिव डाले जाते हैं?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          हमारे सभी जूस रोज़ ताज़े बनाए जाते हैं।  
+          अगर किसी जूस में sweetness महसूस होती है,  
+          तो वह सिर्फ प्राकृतिक सामग्री की वजह से होती है।  
+          हम प्रिज़र्वेटिव नहीं डालते।  
+          चीनी केवल तभी डाली जाती है जब ग्राहक विशेष रूप से कहे।
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>क्या आपके जूस डायबिटीज और BP वाले लोगों के लिए ठीक हैं?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          कई नियमित ग्राहक जो शुगर या BP मैनेज कर रहे हैं,  
+          हमारे जूस जैसे करेला, बीटरूट, गिलोय आदि को अपनी दिनचर्या में शामिल करते हैं।  
+          लेकिन हम हमेशा सलाह देते हैं कि पहले अपने डॉक्टर से सलाह ज़रूर लें।
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>सबसे ताज़ा जूस पाने के लिए मुझे किस समय आना चाहिए?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          सुबह और दोपहर से पहले का समय सबसे अच्छा होता है।  
+          लेकिन हम <strong>5:00 AM से 12:00 PM</strong> तक  
+          ताज़ी बैच तैयार करते हैं।  
+          कोई खास जूस चाहिए हो तो आप हमें पहले कॉल कर सकते हैं।
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>क्या मैं अपने माता–पिता या बुज़ुर्गों को साथ ला सकता हूँ?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          बिल्कुल।  
+          हम गर्व से बच्चों से लेकर बुज़ुर्गों तक सभी को सेवा देते हैं।  
+          हम उनके स्वाद और सुविधा के अनुसार मात्रा और गाढ़ापन समायोजित कर देते हैं।
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">हमसे मिलें</div>
+      <h2 class="section-title">अपना अगला हेल्दी ग्लास लेने ज़रूर आएँ।</h2>
+      <p class="section-subtitle">
+        हमारा स्थान उज्जैन के सबसे सुविधाजनक क्षेत्रों में से एक है —  
+        वॉकर, जिम जाने वाले और रोज़ के commuters यहाँ आसानी से पहुंचते हैं।  
+        अपनी डेली रूटीन में इस हेल्थ स्टॉप को शामिल करना बहुत आसान है।
+      </p>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- Left Side Info -->
+      <div class="contact-card reveal">
+
+        <div class="contact-item">
+          <div class="contact-label">पता</div>
+          <div class="contact-value">
+            गांधी उद्यान, क्षीर सागर, आगर रोड<br/>
+            उज्जैन, मध्य प्रदेश
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label">मालिक</div>
+          <div class="contact-value">जसवंत सिंह चौहान</div>
+        </div>
+
+        <div class="contact-item contact-phone">
+          <div class="contact-label">संपर्क</div>
+          <div class="contact-value">
+            📱 <a href="tel:9098168603">9098168603</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label">अनुभव</div>
+          <div class="contact-value">10+ साल हेल्थ जूस और स्प्राउट्स में</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label">सेवा वर्ष</div>
+          <div class="contact-value">वर्तमान गांधी उद्यान लोकेशन पर 7+ साल</div>
+        </div>
+
+        <p class="contact-note">
+          असली फ़ायदा नियमित आदत से आता है —  
+          अपना पसंदीदा जूस, स्प्राउट्स या सूप चुनिए  
+          और तेजस्वी रसाहार को अपनी डेली हेल्थ रूटीन का हिस्सा बनाइए।
+        </p>
+
+        <button
+          class="btn-primary"
+          style="margin-top: 1.1rem;"
+          onclick="openWhatsApp()"
+        >
+          <span class="icon">📲</span>
+          WhatsApp पर मैसेज भेजें
+        </button>
+
+      </div>
+
+      <!-- Right Side Map -->
+      <div class="map-wrapper reveal">
+        <iframe
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=23.187061,75.780676&hl=en&z=18&output=embed"
+        ></iframe>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="icon">🌿</span>
+        <span>तेजस्वी रसाहार • प्राकृतिक हेल्थ जूस & स्प्राउट्स</span>
+      </div>
+      <div>आपकी सेहत के लिए प्यार से बनाया गया 💚</div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 तेजस्वी रसाहार. सर्वाधिकार सुरक्षित।</span>
+      <span>उज्जैन, मध्य प्रदेश • भारत</span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a
+  href="https://wa.me/919098168603?text=Hi%20Tejasvi%20Rasayan%2C%20main%20aapke%20fresh%20juices%20aur%20sprouts%20ke%20baare%20mein%20jankari%20chahata%2Fchahati%20hoon."
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="WhatsApp par baat karein"
+>
+  🟢
+</a>
+
+<!-- MOBILE STICKY ORDER BAR -->
+<div class="mobile-order-bar">
+  <div class="mobile-order-text">
+    <strong>WhatsApp पर ऑर्डर करें</strong><br/>
+    आज के ताज़ा जूस और स्प्राउट्स की जानकारी पाएं
+  </div>
+
+  <button class="btn-mobile-order" onclick="openWhatsApp()">
+    <span>📲</span>
+    अभी चैट करें
+  </button>
+</div>
+
+
+  <script>
+    // NAV TOGGLE
+    const navToggle = document.querySelector(".nav-toggle");
+    const body = document.body;
+
+    navToggle.addEventListener("click", () => {
+      body.classList.toggle("nav-open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        body.classList.remove("nav-open");
+      });
+    });
+
+    // HEADER SCROLL EFFECT
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 100) {
+        header.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.1)";
+      } else {
+        header.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.06)";
+      }
+    }, { passive: true });
+
+    // WHATSAPP HELPER
+    function openWhatsApp() {
+      const url =
+        "https://wa.me/919098168603?text=Hi%20Tejasvi%20Rasayan%2C%20I%20am%20interested%20in%20your%20juices%20and%20sprouts.";
+      window.open(url, "_blank");
+    }
+
+    // REVEAL ON SCROLL
+    const reveals = document.querySelectorAll(".reveal");
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -60px 0px",
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    reveals.forEach((el) => {
+      revealObserver.observe(el);
+    });
+
+    // FAQ TOGGLE
+    document.querySelectorAll(".faq-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const isOpen = item.classList.contains("open");
+        document.querySelectorAll(".faq-item").forEach((i) => i.classList.remove("open"));
+        if (!isOpen) {
+          item.classList.add("open");
+        }
+      });
+    });
+
+    // SMOOTH SCROLL
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
